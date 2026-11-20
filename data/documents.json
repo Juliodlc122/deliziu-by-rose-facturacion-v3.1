@@ -1,0 +1,99 @@
+{
+  "counters": {
+    "cotizacion": 3,
+    "factura": 1
+  },
+  "documents": [
+    {
+      "id": "doc-seed-cot-1",
+      "folio": "COT-0001",
+      "type": "cotizacion",
+      "status": "enviada",
+      "billingMode": "por_persona",
+      "clientName": "Laura Mercedes Santos",
+      "clientInfo": "809-555-2418 · Cena familiar de aniversario",
+      "issueDate": "2026-11-19",
+      "deliveryDate": "2026-12-05",
+      "guestCount": 30,
+      "pricePerPerson": 950,
+      "items": [
+        {
+          "id": "it-1",
+          "description": "Moro de guandules con coco",
+          "pricingMode": "unit",
+          "quantity": "30",
+          "price": 2333
+        },
+        {
+          "id": "it-2",
+          "description": "Pechuga a la crema de champiñones",
+          "pricingMode": "general",
+          "quantity": "30",
+          "price": 456
+        },
+        {
+          "id": "it-3",
+          "description": "Ensalada verde con vinagreta de chinola",
+          "pricingMode": "unit",
+          "quantity": "30",
+          "price": 0
+        },
+        {
+          "id": "it-4",
+          "description": "Arroz con maíz (extra)",
+          "pricingMode": "general",
+          "quantity": "20",
+          "price": 2000
+        }
+      ],
+      "deposit": 0,
+      "notes": "• Reserva con un 50% de adelanto para confirmar el pedido.\n• No incluye gastos de envío / transporte.",
+      "createdAt": "2026-11-20T03:57:41.791Z",
+      "updatedAt": "2026-11-20T04:24:28.005Z",
+      "createdBy": "Deliziubyrose",
+      "updatedBy": "Deliziubyrose"
+    },
+    {
+      "id": "doc-seed-fac-1",
+      "folio": "FAC-0001",
+      "type": "factura",
+      "status": "pagada",
+      "billingMode": "por_articulo",
+      "clientName": "Corporación Caribe Events",
+      "clientInfo": "829-555-8834 · Brindis corporativo",
+      "issueDate": "2026-11-18",
+      "deliveryDate": "2026-11-22",
+      "guestCount": 20,
+      "pricePerPerson": 850,
+      "items": [
+        {
+          "id": "it-5",
+          "description": "Croquetas artesanales de pollo",
+          "pricingMode": "unit",
+          "quantity": "50",
+          "price": 30
+        },
+        {
+          "id": "it-6",
+          "description": "Kipes rellenos de res",
+          "pricingMode": "unit",
+          "quantity": "40",
+          "price": 35
+        },
+        {
+          "id": "it-7",
+          "description": "Ensalada rusa de la casa",
+          "pricingMode": "general",
+          "quantity": "2 bandejas",
+          "price": 2400
+        }
+      ],
+      "deposit": 2650,
+      "notes": "• Reserva con un 50% de adelanto para confirmar el pedido.\n• No incluye gastos de envío / transporte.",
+      "createdAt": "2026-11-20T03:57:41.791Z",
+      "updatedAt": "2026-11-20T03:59:41.029Z",
+      "createdBy": "Deliziubyrose",
+      "updatedBy": "Deliziubyrose"
+    }
+  ]
+}

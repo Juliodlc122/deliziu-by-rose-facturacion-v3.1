@@ -1,0 +1,6 @@
+{
+  "name": "Deliziu by Rose — Cotizaciones y Facturación",
+  "description": "Aplicación web de cotizaciones y facturación para Deliziu by Rose (Catering & Eventos en República Dominicana, DOP / RD$).",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
