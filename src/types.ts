@@ -55,7 +55,7 @@ export const BUSINESS_INFO = {
   whatsappDigits: '18098491820',
   instagram: '@deliziubyrose',
   currencyLabel: 'DOP (RD$)',
-  logoPath: '/assets/aistudio/logo_deliziu_2f17718a.png',
+  logoPath: '/logo-deliziu.png',
   defaultNotes:
     '• Reserva con un 50% de adelanto para confirmar el pedido.\n• No incluye gastos de envío / transporte.',
 } as const;

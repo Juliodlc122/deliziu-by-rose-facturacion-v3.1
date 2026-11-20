@@ -747,7 +747,11 @@ async function startServer(): Promise<void> {
       app.use(express.static(publicDir));
     }
     app.use(express.static(distDir));
-    app.get('*', (_req, res) => {
+    app.get('*', (req, res) => {
+      if (/\.(png|jpe?g|webp|gif|svg|ico|css|js|map)$/i.test(req.path)) {
+        res.status(404).end();
+        return;
+      }
       res.sendFile(path.join(distDir, 'index.html'));
     });
   }

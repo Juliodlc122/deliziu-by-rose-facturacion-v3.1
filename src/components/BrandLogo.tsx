@@ -1,4 +1,5 @@
 import { useState } from 'react';
+import { EMBEDDED_DELIZIU_LOGO } from '../assets/logoData';
 import { BUSINESS_INFO } from '../types';
 
 interface BrandLogoProps {
@@ -12,10 +13,12 @@ const SIZE_CLASSES: Record<'sm' | 'md' | 'lg', string> = {
   lg: 'w-20 h-20 text-xl',
 };
 
-export function BrandLogo({ size = 'md', className = '' }: BrandLogoProps) {
-  const [imgFailed, setImgFailed] = useState(false);
+const LOGO_SOURCES = [BUSINESS_INFO.logoPath, EMBEDDED_DELIZIU_LOGO];
 
-  if (imgFailed) {
+export function BrandLogo({ size = 'md', className = '' }: BrandLogoProps) {
+  const [sourceIndex, setSourceIndex] = useState(0);
+
+  if (sourceIndex >= LOGO_SOURCES.length) {
     return (
       <div
         aria-label={BUSINESS_INFO.brandName}
@@ -28,10 +31,10 @@ export function BrandLogo({ size = 'md', className = '' }: BrandLogoProps) {
 
   return (
     <img
-      src={BUSINESS_INFO.logoPath}
+      src={LOGO_SOURCES[sourceIndex]}
       alt={`Logo de ${BUSINESS_INFO.brandName}`}
       referrerPolicy="no-referrer"
-      onError={() => setImgFailed(true)}
+      onError={() => setSourceIndex((prev) => prev + 1)}
       className={`${SIZE_CLASSES[size]} ${className} rounded-full object-contain shrink-0 bg-white`}
     />
   );
