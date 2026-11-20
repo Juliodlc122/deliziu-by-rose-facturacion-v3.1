@@ -115,7 +115,7 @@ export function MobileExportSheet({
               className="min-h-[48px] flex items-center justify-center gap-2 rounded-xl bg-[#23262d] hover:bg-[#2c303a] border border-[#343944] text-white font-semibold text-sm px-3 transition-colors cursor-pointer disabled:opacity-60"
             >
               <FileDown className="w-4 h-4 text-[#64b5f6]" aria-hidden="true" />
-              <span>PDF (A4)</span>
+              <span>Descargar PDF</span>
             </button>
           </div>
 

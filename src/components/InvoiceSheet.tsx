@@ -89,21 +89,21 @@ export function InvoiceSheet({ draft, folio, sheetRef }: InvoiceSheetProps) {
     >
       <div className="px-4 py-6 sm:px-10 sm:py-9">
         {/* Blended Header: Circular Logo + Deliziubyrose serif left | Clean Typographic Title, Folio & Social Icons right */}
-        <header className="flex items-center justify-between gap-3 sm:gap-4 pb-5 border-b border-[#d4d4d8]">
-          <div className="flex items-center gap-3 sm:gap-4 min-w-0">
-            <BrandLogo size="md" className="w-14 h-14 sm:w-[74px] sm:h-[74px] shrink-0" />
+        <header className="flex items-center justify-between gap-2.5 sm:gap-4 pb-5 border-b border-[#d4d4d8]">
+          <div className="flex items-center gap-2.5 sm:gap-4 min-w-0">
+            <BrandLogo size="md" className="w-12 h-12 sm:w-[74px] sm:h-[74px] shrink-0" />
             <div className="min-w-0">
-              <h2 className="font-brand-serif text-[19px] sm:text-[26px] font-bold leading-tight text-[#18181b] tracking-tight truncate">
+              <h2 className="font-brand-serif text-[17px] sm:text-[26px] font-bold leading-tight text-[#18181b] tracking-tight whitespace-nowrap">
                 {BUSINESS_INFO.brandName}
               </h2>
-              <p className="text-[11px] sm:text-[12.5px] font-medium text-[#71717a] mt-0.5 tracking-wide">
+              <p className="text-[10.5px] sm:text-[12.5px] font-medium text-[#71717a] mt-0.5 tracking-wide whitespace-nowrap">
                 {BUSINESS_INFO.subtitle}
               </p>
             </div>
           </div>
 
           <div className="text-right shrink-0">
-            <div className="text-base sm:text-[21px] font-bold tracking-[0.08em] text-[#18181b] leading-none">
+            <div className="text-[15px] sm:text-[21px] font-bold tracking-[0.07em] text-[#18181b] leading-none">
               {docTitle}
             </div>
             <div

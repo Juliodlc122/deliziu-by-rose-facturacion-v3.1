@@ -49,9 +49,11 @@
       "deposit": 0,
       "notes": "• Reserva con un 50% de adelanto para confirmar el pedido.\n• No incluye gastos de envío / transporte.",
       "createdAt": "2026-11-20T03:57:41.791Z",
-      "updatedAt": "2026-11-20T04:24:28.005Z",
+      "updatedAt": "2026-11-20T05:53:06.792Z",
       "createdBy": "Deliziubyrose",
-      "updatedBy": "Deliziubyrose"
+      "updatedBy": "Deliziubyrose",
+      "packagePricingMode": "individual",
+      "packageGeneralPrice": 0
     },
     {
       "id": "doc-seed-fac-1",

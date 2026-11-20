@@ -576,7 +576,7 @@ export default function App() {
                   className="min-h-[46px] inline-flex items-center justify-center gap-2 rounded-xl bg-[#1b1d22] border border-[#343944] text-white text-xs font-semibold px-3 cursor-pointer disabled:opacity-60"
                 >
                   <FileDown className="w-4 h-4 text-[#64b5f6]" aria-hidden="true" />
-                  <span>{exporting === 'pdf' ? 'Generando...' : 'PDF (A4)'}</span>
+                  <span>{exporting === 'pdf' ? 'Generando...' : 'Descargar PDF'}</span>
                 </button>
               </div>
             </div>
